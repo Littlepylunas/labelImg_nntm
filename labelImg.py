@@ -49,7 +49,7 @@ from libs.create_ml_io import JSON_EXT
 from libs.ustr import ustr
 from libs.hashableQListWidgetItem import HashableQListWidgetItem
 
-__appname__ = 'labelImg'
+__appname__ = 'Lấy nhãn dữ liệu'
 
 
 class WindowMixin(object):
@@ -646,7 +646,8 @@ class MainWindow(QMainWindow, WindowMixin):
 
     # Callbacks #
     def show_tutorial_dialog(self):
-        subprocess.Popen(self.screencast_viewer + [self.screencast])
+        print('Cancel creation.')
+        #subprocess.Popen(self.screencast_viewer + [self.screencast])
 
     def show_info_dialog(self):
         from libs.__init__ import __version__
